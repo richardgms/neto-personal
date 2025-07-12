@@ -19,7 +19,7 @@ import NetoProfileCard from './NetoProfileCard'
 
 export default function AboutSection() {
   return (
-    <section id="sobre" className="py-16 sm:py-24 lg:py-32 bg-black">
+    <section id="sobre" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-black via-black/95 to-black/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
@@ -45,7 +45,7 @@ export default function AboutSection() {
 
             {/* Credenciais e Conquistas */}
             <div className="grid grid-cols-2 gap-4 sm:gap-6">
-              <div className="bg-gray-900/50 p-4 sm:p-6 rounded-xl border border-primary-400/30 hover:border-primary-400/60 transition-all duration-300">
+              <div className="bg-[#140808] p-4 sm:p-6 rounded-xl border border-primary-400/30 hover:border-primary-400/60 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-3">
                   <Award className="w-6 h-6 text-primary-400" />
                   <span className="font-bold text-white text-sm sm:text-base">CREF Ativo</span>
@@ -53,7 +53,7 @@ export default function AboutSection() {
                 <p className="text-xs sm:text-sm text-gray-400">{personalTrainerConfig.cref}</p>
               </div>
               
-              <div className="bg-gray-900/50 p-4 sm:p-6 rounded-xl border border-primary-700/30 hover:border-primary-700/60 transition-all duration-300">
+              <div className="bg-[#140808] p-4 sm:p-6 rounded-xl border border-primary-700/30 hover:border-primary-700/60 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-3">
                   <Users className="w-6 h-6 text-primary-700" />
                   <span className="font-bold text-white text-sm sm:text-base">
@@ -73,7 +73,7 @@ export default function AboutSection() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {personalTrainerConfig.specialties.map((specialty, index) => (
-                  <div key={index} className="flex items-center gap-3 p-3 bg-gray-900/30 rounded-lg border border-gray-700/30 hover:border-primary-400/30 transition-all duration-300">
+                  <div key={index} className="flex items-center gap-3 p-3 bg-[#140808] rounded-lg border border-gray-700/30 hover:border-primary-400/30 transition-all duration-300">
                     <CheckCircle className="w-5 h-5 text-primary-400 flex-shrink-0" />
                     <span className="text-white font-medium text-sm sm:text-base">{specialty}</span>
                   </div>

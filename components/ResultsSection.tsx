@@ -9,9 +9,17 @@ export default function ResultsSection() {
   const containerRef = useRef<HTMLDivElement>(null)
 
   return (
-    <section id="resultados" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-gray-900 to-[#0a0d1a] relative overflow-hidden">
-      <div className="absolute -top-16 -left-16 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-      <div className="absolute -bottom-20 -right-20 w-[28rem] h-[28rem] bg-primary-400/10 rounded-full blur-3xl" />
+    <section id="resultados" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-black via-black/95 to-black/90 relative overflow-hidden">
+      {/* Grid background pattern */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+      </div>
+
+      {/* Colored glows */}
+      <div aria-hidden="true" className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-gradient-to-br from-primary-700/50 to-primary-500/20 rounded-full blur-3xl opacity-30"></div>
+        <div className="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-gradient-to-tl from-primary-600/50 to-primary-400/20 rounded-full blur-3xl opacity-30"></div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">

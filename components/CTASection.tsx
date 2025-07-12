@@ -24,7 +24,7 @@ export default function CTASection() {
 
   return (
     <section id="cta" className="py-20 sm:py-28 lg:py-32 bg-black text-white relative overflow-hidden">
-      <div className="absolute inset-0 w-full h-full bg-[radial-gradient(ellipse_at_center,rgba(0,240,255,0.1),transparent_70%)]"></div>
+      <div className="absolute inset-0 w-full h-full bg-[radial-gradient(ellipse_at_center,rgba(248,113,113,0.1),transparent_70%)]"></div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
@@ -36,7 +36,7 @@ export default function CTASection() {
         
         <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
           {features.map((feature, index) => (
-            <div key={index} className="bg-gray-800/30 backdrop-blur-sm border border-primary-500/20 rounded-2xl p-6 flex flex-col items-center text-center transform transition-all duration-300 hover:bg-gray-800/50 hover:border-primary-500/40 hover:-translate-y-2">
+            <div key={index} className="bg-[#140808]/80 backdrop-blur-sm border border-primary-500/30 rounded-2xl p-6 flex flex-col items-center text-center transform transition-all duration-300 hover:bg-[#140808] hover:border-primary-400 hover:shadow-xl hover:shadow-primary-400/20 hover:-translate-y-2">
               <div className="mb-4">
                 {feature.icon}
               </div>

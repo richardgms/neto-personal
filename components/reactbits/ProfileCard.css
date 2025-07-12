@@ -13,12 +13,12 @@
   --icon: none;
   --behind-gradient: none;
   --inner-gradient: none;
-  --sunpillar-1: hsl(0, 100%, 73%);
-  --sunpillar-2: hsl(15, 100%, 69%);
-  --sunpillar-3: hsl(30, 100%, 69%);
-  --sunpillar-4: hsl(0, 100%, 76%);
-  --sunpillar-5: hsl(345, 100%, 74%);
-  --sunpillar-6: hsl(330, 100%, 73%);
+  --sunpillar-1: hsl(0, 89%, 71%); /* Red (primary-400) */
+  --sunpillar-2: hsl(0, 86%, 60%); /* Red (primary-500) */
+  --sunpillar-3: hsl(15, 90%, 60%); /* Orange-Red */
+  --sunpillar-4: hsl(0, 72%, 50%); /* Dark Red (primary-600) */
+  --sunpillar-5: hsl(355, 80%, 55%); /* Deep Red */
+  --sunpillar-6: hsl(0, 74%, 41%); /* Darkest Red (primary-700) */
   --sunpillar-clr-1: var(--sunpillar-1);
   --sunpillar-clr-2: var(--sunpillar-2);
   --sunpillar-clr-3: var(--sunpillar-3);
@@ -132,7 +132,7 @@
   background: transparent;
   background-size: cover;
   background-position: center;
-  background-image: repeating-linear-gradient(0deg, var(--sunpillar-clr-1) calc(var(--space) * 1), var(--sunpillar-clr-2) calc(var(--space) * 2), var(--sunpillar-clr-3) calc(var(--space) * 3), var(--sunpillar-clr-4) calc(var(--space) * 4), var(--sunpillar-clr-5) calc(var(--space) * 5), var(--sunpillar-clr-6) calc(var(--space) * 6), var(--sunpillar-clr-1) calc(var(--space) * 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(0, 10%, 60%) 3.8%, hsl(0, 29%, 66%) 4.5%, hsl(0, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y), hsla(0, 0%, 0%, 0.1) 12%, hsla(0, 0%, 0%, 0.15) 20%, hsla(0, 0%, 0%, 0.25) 120%);
+  background-image: repeating-linear-gradient(0deg, var(--sunpillar-clr-1) calc(var(--space) * 1), var(--sunpillar-clr-2) calc(var(--space) * 2), var(--sunpillar-clr-3) calc(var(--space) * 3), var(--sunpillar-clr-4) calc(var(--space) * 4), var(--sunpillar-clr-5) calc(var(--space) * 5), var(--sunpillar-clr-6) calc(var(--space) * 6), var(--sunpillar-clr-1) calc(var(--space) * 7)), repeating-linear-gradient(var(--angle), #261515 0%, hsl(0, 10%, 60%) 3.8%, hsl(0, 29%, 66%) 4.5%, hsl(0, 10%, 60%) 5.2%, #261515 10%, #261515 12%), radial-gradient(farthest-corner circle at var(--pointer-x) var(--pointer-y), hsla(0, 0%, 0%, 0.1) 12%, hsla(0, 0%, 0%, 0.15) 20%, hsla(0, 0%, 0%, 0.25) 120%);
   background-position: 0 var(--background-y), var(--background-x) var(--background-y), center;
   background-blend-mode: color, hard-light;
   background-size: 500% 500%, 300% 300%, 200% 200%;
@@ -195,7 +195,7 @@
   width: 85%;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) scale(0.70);
+  transform: translateY(-20%) translateX(-50%) scale(1);
   bottom: -24px;
   opacity: 1;
 }

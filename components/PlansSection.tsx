@@ -5,7 +5,7 @@ import { Smartphone, Dumbbell, ArrowRight, Heart, Star, Medal } from 'lucide-rea
 
 export default function PlansSection() {
   return (
-    <section id="planos" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-gray-900 to-[#0a0d1a]">
+    <section id="planos" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-b from-black via-black/95 to-black/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8">
@@ -21,7 +21,7 @@ export default function PlansSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 max-w-6xl mx-auto">
           {/* Online Plan */}
           <div className="flex">
-            <div className="bg-gray-800/70 backdrop-blur-sm border-2 border-primary-400/30 rounded-2xl sm:rounded-3xl overflow-hidden relative h-full flex flex-col w-full transition-all duration-500 hover:shadow-2xl hover:shadow-primary-400/30 hover:border-primary-400/70 group">
+            <div className="bg-[#261515]/80 backdrop-blur-sm border-2 border-primary-400/30 rounded-2xl sm:rounded-3xl overflow-hidden relative h-full flex flex-col w-full transition-all duration-500 hover:shadow-2xl hover:shadow-primary-400/30 hover:border-primary-400/70 group">
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary-400/20 rounded-full -translate-y-16 translate-x-16"></div>
@@ -56,25 +56,25 @@ export default function PlansSection() {
                 </div>
                 
                 <div className="space-y-3 sm:space-y-4 mb-8 flex-1">
-                  <div className="flex justify-between items-center p-3 sm:p-4 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-700/30 hover:border-primary-400/30">
+                  <div className="flex justify-between items-center p-3 sm:p-4 bg-[#261515]/50 rounded-lg hover:bg-[#382323]/60 transition-all duration-300 border border-[#382323]/30 hover:border-primary-400/30">
                     <span className="font-semibold text-white text-sm sm:text-base">Mensal</span>
                     <span className="text-xl sm:text-2xl font-bold text-primary-400">{personalTrainerConfig.onlinePlans.monthly}</span>
                   </div>
-                  <div className="flex justify-between items-center p-3 sm:p-4 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-700/30 hover:border-primary-400/30">
+                  <div className="flex justify-between items-center p-3 sm:p-4 bg-[#261515]/50 rounded-lg hover:bg-[#382323]/60 transition-all duration-300 border border-[#382323]/30 hover:border-primary-400/30">
                     <span className="font-semibold text-white text-sm sm:text-base">Trimestral</span>
                     <div className="text-right">
                       <span className="text-xl sm:text-2xl font-bold text-primary-400">{personalTrainerConfig.onlinePlans.quarterly}</span>
                       <p className="text-xs text-gray-400">3x no cartão</p>
                     </div>
                   </div>
-                  <div className="flex justify-between items-center p-3 sm:p-4 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-700/30 hover:border-primary-400/30">
+                  <div className="flex justify-between items-center p-3 sm:p-4 bg-[#261515]/50 rounded-lg hover:bg-[#382323]/60 transition-all duration-300 border border-[#382323]/30 hover:border-primary-400/30">
                     <span className="font-semibold text-white text-sm sm:text-base">Semestral</span>
                      <div className="text-right">
                       <span className="text-xl sm:text-2xl font-bold text-primary-400">{personalTrainerConfig.onlinePlans.semiannual}</span>
                       <p className="text-xs text-gray-400">6x no cartão</p>
                     </div>
                   </div>
-                  <div className="flex justify-between items-center p-3 sm:p-4 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-700/30 hover:border-primary-400/30">
+                  <div className="flex justify-between items-center p-3 sm:p-4 bg-[#261515]/50 rounded-lg hover:bg-[#382323]/60 transition-all duration-300 border border-[#382323]/30 hover:border-primary-400/30">
                     <span className="font-semibold text-white text-sm sm:text-base">Anual</span>
                      <div className="text-right">
                       <span className="text-xl sm:text-2xl font-bold text-primary-400">{personalTrainerConfig.onlinePlans.annual}</span>
@@ -105,7 +105,7 @@ export default function PlansSection() {
 
           {/* Presencial Plan */}
           <div className="flex">
-            <div className="bg-gray-800/70 backdrop-blur-sm border-2 border-primary-700/30 rounded-2xl sm:rounded-3xl overflow-hidden relative h-full flex flex-col w-full transition-all duration-500 hover:shadow-2xl hover:shadow-primary-700/30 hover:border-primary-700/70 group">
+            <div className="bg-[#261515]/80 backdrop-blur-sm border-2 border-primary-700/30 rounded-2xl sm:rounded-3xl overflow-hidden relative h-full flex flex-col w-full transition-all duration-500 hover:shadow-2xl hover:shadow-primary-700/30 hover:border-primary-700/70 group">
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary-700/20 rounded-full -translate-y-16 translate-x-16"></div>
@@ -140,7 +140,7 @@ export default function PlansSection() {
                 </div>
                 
                 <div className="space-y-3 sm:space-y-4 mb-8 flex-1">
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-700/30 hover:border-primary-700/30">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-[#261515]/50 rounded-lg hover:bg-[#382323]/60 transition-all duration-300 border border-[#382323]/30 hover:border-primary-700/30">
                     <div>
                       <span className="font-semibold text-white text-sm sm:text-base">Plano Híbrido</span>
                       <p className="text-xs text-gray-400">3x Presencial + 2x Online</p>
@@ -150,7 +150,7 @@ export default function PlansSection() {
                       <p className="text-xs text-gray-400">mensal</p>
                     </div>
                   </div>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-700/30 hover:border-primary-700/30">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-[#261515]/50 rounded-lg hover:bg-[#382323]/60 transition-all duration-300 border border-[#382323]/30 hover:border-primary-700/30">
                     <div>
                       <span className="font-semibold text-white text-sm sm:text-base">Plano 4x</span>
                       <p className="text-xs text-gray-400">4x por semana</p>
@@ -160,7 +160,7 @@ export default function PlansSection() {
                       <p className="text-xs text-gray-400">mensal</p>
                     </div>
                   </div>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-700/30 hover:border-primary-700/30">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center p-3 sm:p-4 bg-[#261515]/50 rounded-lg hover:bg-[#382323]/60 transition-all duration-300 border border-[#382323]/30 hover:border-primary-700/30">
                     <div>
                       <span className="font-semibold text-white text-sm sm:text-base">Plano 5x</span>
                         <p className="text-xs text-gray-400">5x por semana</p>
