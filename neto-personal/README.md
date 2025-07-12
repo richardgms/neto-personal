@@ -1,6 +1,6 @@
 # Neto Personal
 
-Bem-vindo ao projeto **Neto Personal**!
+Bem-vindo ao projeto **Neto Personal**
 
 Este é um site dedicado a apresentar os serviços, informações e conteúdos de um personal trainer, com o objetivo de promover saúde, bem-estar e qualidade de vida.
 
