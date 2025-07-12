@@ -17,7 +17,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10 sm:py-16 border-t border-primary-400/30">
+    <footer className="bg-black text-white pt-10 sm:pt-16 pb-6 sm:pb-8 border-t border-primary-400/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mensagem de missão / propósito */}
         <div className="text-center mb-8">
@@ -104,12 +104,18 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-6 pb-8 text-center text-gray-500">
+        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
           <p className="text-xs">
             &copy; {new Date().getFullYear()} {personalTrainerConfig.fullName} {personalTrainerConfig.title}. Todos os direitos reservados.
-            <br className="sm:hidden" />
-            <a href="https://instagram.com/richardgmsz" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary-400 transition-colors ml-1">
-              Desenvolvido por Richard G.
+          </p>
+          <p className="text-xs mt-2">
+            Desenvolvido por{' '}
+            <a href="https://instagram.com/richardgmsz" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary-400 transition-colors">
+              Richard G.
+            </a>{' '}
+            e{' '}
+            <a href="https://instagram.com/allan_araujo16" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary-400 transition-colors">
+              Allan F.
             </a>
           </p>
         </div>
