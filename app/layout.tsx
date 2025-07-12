@@ -2,27 +2,28 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import '@/components/reactbits/ProfileCard.css'
+import { personalTrainerConfig } from '@/config/personal-trainer'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Joelma Costa - Personal Trainer',
-  description: 'Personal Trainer especializada em transformação corporal real. Consultoria online e presencial na Paraíba. Resultados de verdade para sua saúde e autoestima!',
+  title: `${personalTrainerConfig.fullName} - Personal Trainer`,
+  description:
+    'Personal Trainer especialista em transformação corporal. Consultoria online e presencial. Resultados de verdade para sua saúde e autoestima!',
   keywords: [
     'personal trainer',
-    'paraíba',
     'transformação corporal',
     'queimar gordura',
     'ganhar músculo',
     'consultoria online',
     'treino presencial',
-    'joelma costa',
-    'personal trainer pb',
-    'transformação de verdade'
+    personalTrainerConfig.fullName.toLowerCase(),
+    'personal trainer online',
+    'transformação de verdade',
   ],
-  authors: [{ name: 'Joelma Costa' }],
-  creator: 'Joelma Costa',
-  publisher: 'Joelma Costa Personal Trainer',
+  authors: [{ name: personalTrainerConfig.fullName }],
+  creator: personalTrainerConfig.fullName,
+  publisher: `${personalTrainerConfig.fullName} Personal Trainer`,
   robots: {
     index: true,
     follow: true,
@@ -37,21 +38,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://joelmacosta.com.br',
-    title: 'Joelma Costa - Personal Trainer',
-    description: 'Transformação corporal real com metodologia científica. Resultados de verdade para sua saúde e autoestima!',
-    siteName: 'Joelma Costa Personal Trainer',
+    url: personalTrainerConfig.website,
+    title: `${personalTrainerConfig.fullName} - Personal Trainer`,
+    description:
+      'Transformação corporal real com metodologia científica. Resultados de verdade para sua saúde e autoestima!',
+    siteName: `${personalTrainerConfig.fullName} Personal Trainer`,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Joelma Costa - Personal Trainer',
-    description: 'Transformação corporal real com metodologia científica. Resultados de verdade para sua saúde e autoestima!',
+    title: `${personalTrainerConfig.fullName} - Personal Trainer`,
+    description:
+      'Transformação corporal real com metodologia científica. Resultados de verdade para sua saúde e autoestima!',
   },
   verification: {
     google: 'your-google-verification-code',
   },
   alternates: {
-    canonical: 'https://joelmacosta.com.br',
+    canonical: personalTrainerConfig.website,
   },
 }
 
@@ -66,8 +69,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="icon" href="/logo/monogram.png" type="image/png" />
-        <meta name="theme-color" content="#0ec9d6" />
-        <meta name="msapplication-TileColor" content="#0ec9d6" />
+        <meta name="theme-color" content="#DC2626" />
+        <meta name="msapplication-TileColor" content="#DC2626" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         
         {/* WhatsApp Meta Tags */}
@@ -80,28 +83,32 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Joelma Costa",
-              "jobTitle": "Personal Trainer",
-              "description": "Personal Trainer especializada em transformações corporais extremas",
-              "url": "https://joelmacosta.com.br",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Santa Rita",
-                "addressRegion": "PB",
-                "addressCountry": "BR"
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: personalTrainerConfig.fullName,
+              jobTitle: personalTrainerConfig.title,
+              description:
+                'Personal Trainer especialista em transformações corporais',
+              url: personalTrainerConfig.website,
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality:
+                  personalTrainerConfig.location.split(' - ')[0] || '',
+                addressRegion:
+                  personalTrainerConfig.location.split(' - ')[1] || '',
+                addressCountry: 'BR',
               },
-              "telephone": "+5583988073784",
-              "offers": {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Consultoria Personal Trainer",
-                  "description": "Consultoria online e presencial para transformação corporal"
-                }
-              }
-            })
+              telephone: personalTrainerConfig.phone,
+              offers: {
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Consultoria Personal Trainer',
+                  description:
+                    'Consultoria online e presencial para transformação corporal',
+                },
+              },
+            }),
           }}
         />
       </head>

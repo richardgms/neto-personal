@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { personalTrainerConfig, generateWhatsAppUrl } from '@/config/personal-trainer'
+import { Award } from 'lucide-react'
 
 export default function HeroSection() {
   return (
@@ -72,8 +73,8 @@ export default function HeroSection() {
                 {/* Badge/Tag dentro da foto */}
                 <div className="absolute top-4 left-4 z-20 bg-primary-500 text-white rounded-lg shadow-lg px-[clamp(0.5rem,2.5vw,1rem)] py-[clamp(0.25rem,1.25vw,0.5rem)]">
                   <span className="font-bold flex items-center gap-1.5 text-[clamp(0.75rem,2.5vw,1rem)]">
-                    <span className="text-[clamp(1rem,3.125vw,1.25rem)] mr-1">🏆</span>
-                    <span>CREF: 009852-G/PB</span>
+                    <Award className="w-[clamp(1rem,3.125vw,1.25rem)] h-[clamp(1rem,3.125vw,1.25rem)] mr-1" />
+                    <span>CREF ATIVO</span>
                   </span>
                 </div>
                 

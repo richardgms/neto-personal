@@ -1,9 +1,21 @@
 'use client'
 
 import Image from 'next/image'
-import { personalTrainerConfig, generateWhatsAppUrl } from '@/config/personal-trainer'
-import { Star, ArrowRight, Award, Users, Heart, Target, Clock, CheckCircle } from 'lucide-react'
-import JoelmaProfileCard from './JoelmaProfileCard'
+import {
+  personalTrainerConfig,
+  generateWhatsAppUrl,
+} from '@/config/personal-trainer'
+import {
+  Star,
+  ArrowRight,
+  Award,
+  Users,
+  Heart,
+  Target,
+  Clock,
+  CheckCircle,
+} from 'lucide-react'
+import NetoProfileCard from './NetoProfileCard'
 
 export default function AboutSection() {
   return (
@@ -18,12 +30,16 @@ export default function AboutSection() {
                 Bacharelado em Educação Física
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8">
-                Conheça a
+                Conheça
                 <br />
-                <span className="bg-gradient-to-r from-primary-400 to-primary-700 bg-clip-text text-transparent">{personalTrainerConfig.fullName}</span>
+                <span className="bg-gradient-to-r from-primary-400 to-primary-700 bg-clip-text text-transparent">
+                  {personalTrainerConfig.fullName}
+                </span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
-                Especialista em transformação corporal feminina. Mais de {personalTrainerConfig.clientsTransformed.replace('+', '')} mulheres já alcançaram seus objetivos comigo.
+                Especialista em transformação corporal. Mais de{' '}
+                {personalTrainerConfig.clientsTransformed.replace('+', '')}{' '}
+                alunos já alcançaram seus objetivos comigo.
               </p>
             </div>
 
@@ -40,9 +56,13 @@ export default function AboutSection() {
               <div className="bg-gray-900/50 p-4 sm:p-6 rounded-xl border border-primary-700/30 hover:border-primary-700/60 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-3">
                   <Users className="w-6 h-6 text-primary-700" />
-                  <span className="font-bold text-white text-sm sm:text-base">Instrutora i9fit</span>
+                  <span className="font-bold text-white text-sm sm:text-base">
+                    Acompanhamento
+                  </span>
                 </div>
-                <p className="text-xs sm:text-sm text-gray-400">Santa Rita - PB</p>
+                <p className="text-xs sm:text-sm text-gray-400">
+                  {personalTrainerConfig.location}
+                </p>
               </div>
             </div>
 
@@ -65,24 +85,34 @@ export default function AboutSection() {
             <div className="bg-gradient-to-r from-primary-400/10 to-primary-700/10 rounded-xl p-6 border border-primary-400/20">
               <div className="flex items-center gap-3 mb-4">
                 <Heart className="w-6 h-6 text-primary-400" />
-                <h3 className="text-lg sm:text-xl font-bold text-white">Por que escolher a Joelma?</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-white">
+                  Por que escolher o {personalTrainerConfig.name}?
+                </h3>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-center gap-3">
                   <Target className="w-5 h-5 text-primary-400" />
-                  <span className="text-gray-300 text-sm">Foco em resultados reais</span>
+                  <span className="text-gray-300 text-sm">
+                    Foco em resultados reais
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-primary-400" />
-                  <span className="text-gray-300 text-sm">Acompanhamento 24/7</span>
+                  <span className="text-gray-300 text-sm">
+                    Acompanhamento 24/7
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Users className="w-5 h-5 text-primary-400" />
-                  <span className="text-gray-300 text-sm">Experiência com mães</span>
+                  <span className="text-gray-300 text-sm">
+                    Qualidade de Vida
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Star className="w-5 h-5 text-primary-400" />
-                  <span className="text-gray-300 text-sm">{personalTrainerConfig.satisfactionRate} satisfação</span>
+                  <span className="text-gray-300 text-sm">
+                    {personalTrainerConfig.satisfactionRate} satisfação
+                  </span>
                 </div>
               </div>
             </div>
@@ -107,9 +137,9 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Card 3D da Joelma */}
+          {/* Card 3D de Neto Oliveira */}
           <div className="relative mx-auto lg:mx-0 lg:ml-12 order-1 lg:order-2 w-full max-w-sm sm:max-w-md lg:max-w-none">
-            <JoelmaProfileCard />
+            <NetoProfileCard />
           </div>
         </div>
       </div>

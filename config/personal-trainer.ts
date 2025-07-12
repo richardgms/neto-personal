@@ -72,84 +72,91 @@ export interface PersonalTrainerConfig {
 
 export const personalTrainerConfig: PersonalTrainerConfig = {
   // Informações pessoais
-  name: "Joelma",
-  lastName: "Costa",
-  fullName: "Joelma Costa",
+  name: "Neto",
+  lastName: "Oliveira",
+  fullName: "Neto Oliveira",
   title: "Personal Trainer",
-  cref: "009852-G/PB",
-  
+  cref: "", // TODO: Preencher com o CREF de Neto Oliveira
+
   // Contato
-  phone: "(83) 98807-3784",
-  whatsappUrl: "https://wa.me/5583988073784",
-  website: "https://www.mfitpersonal.com.br",
-  instagram: "joelmacosta_personal",
-  location: "Santa Rita - PB",
-  locationDetail: "Instrutora na i9fit e consultoria online",
-  
+  phone: "(83) 98711-3897",
+  whatsappUrl: "https://wa.me/5583987113897",
+  website: "https://instabio.cc/NetoOliveiraPersonal",
+  instagram: "netooliveirapersonal",
+  location: "", // TODO: Preencher com a localização
+  locationDetail: "Consultoria online e Acompanhamento presencial",
+
   // Experiência
-  yearsOfExperience: "4+",
-  clientsTransformed: "700+",
-  satisfactionRate: "99%",
-  
+  yearsOfExperience: "X+", // TODO: Preencher com os anos de experiência
+  clientsTransformed: "Y+", // TODO: Preencher com o número de clientes transformados
+  satisfactionRate: "Z%", // TODO: Preencher com a taxa de satisfação
+
   // Biografias
-  shortBio: "Especialista em emagrecimento e hipertrofia. Mais de 700 alunas com resultados reais e rotinas transformadas.",
-  longBio: "Sou Joelma Costa, Personal Trainer (CREF: 009852-G/PB) apaixonada por transformar vidas através do movimento. Com especialização em emagrecimento e hipertrofia, já ajudei mais de 700 alunas a alcançarem seus objetivos e a construírem rotinas mais saudáveis e felizes. Como coach e instrutora na i9fit, acredito que 'o corpo alcança o que a mente acredita', e aplico essa filosofia em cada treino. Minha jornada como mãe e esposa me ensinou a importância do equilíbrio e da dedicação, e uso essa experiência para criar programas de treinamento realistas e eficazes, que se adaptam à sua vida e te levam a resultados extraordinários.",
-  
+  shortBio:
+    "Consultoria online e Acompanhamento presencial. Vamos construir um futuro com mais qualidade de vida?",
+  longBio:
+    "Sou Neto Oliveira, Personal Trainer apaixonado por transformar vidas através do movimento. Com especialização em emagrecimento e hipertrofia, ajudo meus alunos a alcançarem seus objetivos e a construírem rotinas mais saudáveis e felizes. Acredito que o corpo alcança o que a mente acredita e aplico essa filosofia em cada treino, criando programas realistas e eficazes que se adaptam à sua vida para resultados extraordinários.",
+
   // Imagens
-  profileImage: "/imagens/3.png",
+  profileImage: "/imagens/1.png",
   heroImage: "/imagens/2.png",
-  
+
   // Especialidades
   specialties: [
+    "Consultoria Online",
+    "Acompanhamento Presencial",
     "Emagrecimento",
     "Hipertrofia",
-    "Consultoria Online",
-    "Coach",
-    "Treinamento para Mães"
+    "Qualidade de Vida",
   ],
-  
+
   // Planos Online
   onlinePlans: {
     monthly: "R$ 99,90",
     quarterly: "R$ 270,00",
     semiannual: "R$ 480,00",
-    annual: "R$ 840,00"
+    annual: "R$ 840,00",
   },
-  
+
   // Planos Presenciais
   presencialPlans: {
     hybrid: "R$ 350,00",
     presencial4x: "R$ 450,00",
-    presencial5x: "R$ 550,00"
+    presencial5x: "R$ 550,00",
   },
-  
+
   // Horários
   schedule: {
     weekdays: "Segunda a Sexta: 6h às 21h",
     saturday: "Sábado: 8h às 14h",
     sunday: "Domingo: Descanso",
-    responseTime: "Resposta rápida no WhatsApp"
+    responseTime: "Resposta rápida no WhatsApp",
   },
-  
+
   // Logos
   logos: {
     monogram: "/logo/monogram.png",
     complete: "/logo/logocompleta.png",
-    alt: "Joelma Costa Logo"
+    alt: "Neto Oliveira Logo",
   },
-  
+
   // Mensagens WhatsApp
   whatsappMessages: {
-    start: "Olá Joelma! Quero começar minha transformação!",
-    online: "Olá Joelma! Quero o plano ONLINE!",
-    presencial: "Olá Joelma! Quero saber mais sobre os planos presenciais!",
-    methodology: "Olá Joelma! Quero conhecer sua metodologia!",
-    general: "Olá Joelma! Vim pelo site e quero saber sobre os planos."
-  }
+    start: "Olá Neto! Quero começar minha transformação!",
+    online: "Olá Neto! Quero o plano ONLINE!",
+    presencial: "Olá Neto! Quero saber mais sobre os planos presenciais!",
+    methodology: "Olá Neto! Quero conhecer sua metodologia!",
+    general: "Olá Neto! Vim pelo site e quero saber sobre os planos.",
+  },
 }
 
 // Função helper para gerar URLs do WhatsApp
-export function generateWhatsAppUrl(messageType: keyof PersonalTrainerConfig['whatsappMessages']): string {
-  const message = personalTrainerConfig.whatsappMessages[messageType].replace(/Joelma/g, personalTrainerConfig.name);
-  return `${personalTrainerConfig.whatsappUrl}?text=${encodeURIComponent(message)}`;
+export function generateWhatsAppUrl(
+  messageType: keyof PersonalTrainerConfig["whatsappMessages"],
+): string {
+  const message =
+    personalTrainerConfig.whatsappMessages[messageType]
+  return `${personalTrainerConfig.whatsappUrl}?text=${encodeURIComponent(
+    message,
+  )}`
 } 

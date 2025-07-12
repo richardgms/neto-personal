@@ -48,7 +48,7 @@
 @layer components {
   /* Gradient Classes */
   .gradient-orange-red {
-    background: linear-gradient(135deg, #59e8e6 0%, #5d02b9 100%);
+    background: linear-gradient(135deg, #F87171 0%, #B91C1C 100%);
   }
   
   /* Hover Effects */

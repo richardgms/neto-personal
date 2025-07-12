@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { Star, ArrowRight, Award, Trophy, Target } from 'lucide-react'
 import { useRef } from 'react'
+import { generateWhatsAppUrl } from '@/config/personal-trainer'
 
 export default function ResultsSection() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -34,7 +35,7 @@ export default function ResultsSection() {
               badge: 'TOP', 
               color: 'primary-400', 
               img: '/prova-social/joaosilva.png', 
-              depo: 'O treino com Joelma foi adaptado ao meu dia corrido. Hoje estou magro, me sinto forte e não tenho mais dores. Recomendo muito!',
+              depo: 'O treino com o Neto foi adaptado ao meu dia corrido. Hoje estou magro, me sinto forte e não tenho mais dores. Recomendo muito!',
               icon: Trophy
             },
             { 
@@ -43,7 +44,7 @@ export default function ResultsSection() {
               badge: 'PRO', 
               color: 'primary-600', 
               img: '/prova-social/mariasantos.png', 
-              depo: 'Nunca achei que emagrecer fosse possível nessa idade. A Joelma me ensinou a treinar em casa mesmo, de forma simples e segura. Mudou minha vida!',
+              depo: 'Nunca achei que emagrecer fosse possível nessa idade. O Neto me ensinou a treinar em casa mesmo, de forma simples e segura. Mudou minha vida!',
               icon: Star
             },
             { 
@@ -52,7 +53,7 @@ export default function ResultsSection() {
               badge: 'EXPERT', 
               color: 'primary-400', 
               img: '/prova-social/anaoliveira.png', 
-              depo: 'O acompanhamento da Joelma fez toda a diferença. Ela sempre esteve presente, dando orientações práticas. Finalmente estou feliz com meu corpo!',
+              depo: 'O acompanhamento do Neto fez toda a diferença. Ele sempre esteve presente, dando orientações práticas. Finalmente estou feliz com meu corpo!',
               icon: Award
             }
           ].map((testimonial, index) => (
@@ -93,7 +94,7 @@ export default function ResultsSection() {
 
         <div className="text-center mt-10 sm:mt-14 lg:mt-16">
           <a
-            href="https://wa.me/5583988073784?text=Ol%C3%A1%20Joelma!%20Quero%20ver%20mais%20transformações!"
+            href={generateWhatsAppUrl('general')}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center bg-black/40 border border-primary-400/30 hover:border-primary-400/70 text-white px-8 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-lg sm:text-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary-400/20 backdrop-blur-sm gap-2"

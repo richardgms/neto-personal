@@ -49,7 +49,9 @@ export default function PlansSection() {
               <div className="p-6 sm:p-8 flex flex-col flex-1">
                 <div className="mb-6">
                   <p className="text-gray-300 text-sm sm:text-base">
-                    Treinamento personalizado para seu objetivo, com acompanhamento direto da Joelma através do WhatsApp.
+                    Treinamento personalizado para seu objetivo, com
+                    acompanhamento direto de {personalTrainerConfig.name} através
+                    do WhatsApp.
                   </p>
                 </div>
                 
@@ -131,7 +133,9 @@ export default function PlansSection() {
               <div className="p-6 sm:p-8 flex flex-col flex-1">
                 <div className="mb-6">
                   <p className="text-gray-300 text-sm sm:text-base">
-                    Acompanhamento exclusivo com a Joelma em Santa Rita, com treinos personalizados e orientação direta.
+                    Acompanhamento exclusivo com {personalTrainerConfig.name}{' '}
+                    em {personalTrainerConfig.location}, com treinos
+                    personalizados e orientação direta.
                   </p>
                 </div>
                 
@@ -171,7 +175,7 @@ export default function PlansSection() {
                 <div className="mt-auto">
                   <div className="flex items-center gap-2 mb-4 text-gray-300 text-sm">
                     <Medal className="w-4 h-4 text-primary-700" />
-                    <span>Treinos na i9fit em Santa Rita</span>
+                    <span>Ideal para quem busca resultados rápidos</span>
                   </div>
                 <a 
                     href={generateWhatsAppUrl('presencial')}

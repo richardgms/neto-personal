@@ -7,10 +7,13 @@ export interface PersonalTrainerConfig {
   lastName: string
   fullName: string
   title: string
+  cref: string
   
   // Contato
   phone: string
   whatsappUrl: string
+  website: string
+  instagram: string
   location: string
   locationDetail: string
   
@@ -73,17 +76,20 @@ export interface PersonalTrainerConfig {
 // EXEMPLO: Configuração para João Silva
 export const personalTrainerConfig: PersonalTrainerConfig = {
   // Informações pessoais
-  name: "João",
-  lastName: "Silva",
-  fullName: "João Silva",
+  name: "Seu Nome",
+  lastName: "Sobrenome",
+  fullName: "Seu Nome Completo",
   title: "Personal Trainer",
-  
+  cref: "000000-G/UF",
+
   // Contato
-  phone: "(11) 99999-9999",
-  whatsappUrl: "https://wa.me/5511999999999",
-  location: "São Paulo - SP",
-  locationDetail: "Presencial em SP e Online para todo Brasil",
-  
+  phone: "(83) 98711-3897",
+  whatsappUrl: "https://wa.me/5583987113897",
+  website: "https://seusite.com.br",
+  instagram: "seuinstagram",
+  location: "Sua Cidade - UF",
+  locationDetail: "Detalhes da sua localização ou atuação",
+
   // Experiência
   yearsOfExperience: "8+",
   clientsTransformed: "1000+",
@@ -91,7 +97,7 @@ export const personalTrainerConfig: PersonalTrainerConfig = {
   
   // Biografias
   shortBio: "Transformação corporal com foco em hipertrofia e definição muscular. Resultados reais com metodologia personalizada!",
-  longBio: "Personal Trainer especializado em hipertrofia e definição muscular. Graduado em Educação Física com 8 anos de experiência transformando vidas através do treinamento personalizado.",
+  longBio: "Sua biografia completa aqui. Fale sobre sua paixão pelo esporte, suas especializações, e como você ajuda seus alunos a alcançarem seus objetivos. Use este espaço para se conectar com seus futuros clientes.",
   
   // Imagens (mesmos caminhos, substitua as imagens físicas)
   profileImage: "/imagens/1.png",
@@ -133,23 +139,26 @@ export const personalTrainerConfig: PersonalTrainerConfig = {
   logos: {
     monogram: "/logo/monogram.png",
     complete: "/logo/logocompleta.png",
-    alt: "João Silva Logo"
+    alt: "Logo de Seu Nome",
   },
   
   // Mensagens WhatsApp (automaticamente substituirá o nome)
   whatsappMessages: {
-    start: "Olá João! Quero começar minha transformação!",
-    online: "Olá João! Quero o plano ONLINE!",
-    presencial: "Olá João! Quero saber mais sobre os planos presenciais!",
-    methodology: "Olá João! Quero conhecer sua metodologia!",
-    general: "Olá João! Vim pelo site e quero saber sobre os planos."
-  }
+    start: "Olá! Quero começar minha transformação!",
+    online: "Olá! Quero o plano ONLINE!",
+    presencial: "Olá! Quero saber mais sobre os planos presenciais!",
+    methodology: "Olá! Quero conhecer sua metodologia!",
+    general: "Olá! Vim pelo site e quero saber sobre os planos.",
+  },
 }
 
 // Função helper para gerar URLs do WhatsApp
 export function generateWhatsAppUrl(messageType: keyof PersonalTrainerConfig['whatsappMessages']): string {
-  const message = personalTrainerConfig.whatsappMessages[messageType]
-  return `${personalTrainerConfig.whatsappUrl}?text=${encodeURIComponent(message)}`
+  const message =
+    personalTrainerConfig.whatsappMessages[messageType]
+  return `${personalTrainerConfig.whatsappUrl}?text=${encodeURIComponent(
+    message,
+  )}`
 }
 
 /* 
