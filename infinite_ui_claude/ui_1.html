@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Martins - Personal Trainer | Transforme seu Corpo</title>
+    <meta name="description" content="Personal Trainer especializado em transformações corporais. Consultoria online e presencial na Paraíba. Resultados comprovados.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#E6F3FF',
+                            100: '#CCE7FF',
+                            200: '#99CFFF',
+                            300: '#66B7FF',
+                            400: '#339FFF',
+                            500: '#0087FF',
+                            600: '#006BD6',
+                            700: '#004FAD',
+                            800: '#003384',
+                            900: '#00175B'
+                        },
+                        secondary: {
+                            500: '#00E6B8',
+                            600: '#00B392'
+                        },
+                        accent: {
+                            500: '#FFB800',
+                            600: '#E6A500'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+    <!-- WhatsApp Fixed Button -->
+    <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20os%20planos." 
+       target="_blank" rel="noopener"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.696"/>
+        </svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-gray-900">Michael Martins</h1>
+                    <p class="text-xs text-gray-600">Personal Trainer</p>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#inicio" class="text-gray-900 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Início</a>
+                        <a href="#planos" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Planos</a>
+                        <a href="#resultados" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Resultados</a>
+                        <a href="#sobre" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors">Sobre</a>
+                        <a href="#contato" class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-gradient-to-br from-primary-500 to-secondary-500 text-white pt-20 pb-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Transforme seu corpo e mente com 
+                    <span class="text-accent-500">resultados comprovados</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+                    Consultoria especializada em Biomecânica e Avaliação Postural para transformações reais. 
+                    Online para todo o Brasil ou presencial na Paraíba.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20os%20planos." 
+                       target="_blank" rel="noopener"
+                       class="bg-accent-500 hover:bg-accent-600 text-black px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        💬 Falar no WhatsApp
+                    </a>
+                    <a href="#planos" 
+                       class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                        Ver Planos
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-primary-600 mb-2">500+</div>
+                    <div class="text-lg text-gray-700">Alunos Transformados</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-secondary-500 mb-2">5+</div>
+                    <div class="text-lg text-gray-700">Anos de Experiência</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-accent-500 mb-2">98%</div>
+                    <div class="text-lg text-gray-700">Taxa de Satisfação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="planos" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Escolha seu Plano Ideal</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Planos pensados para diferentes objetivos e orçamentos. Todos com acompanhamento personalizado.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Online Plans -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-secondary-500 text-center mb-6">📱 Consultoria Online</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-secondary-500 transition-colors">
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-lg font-semibold">Mensal</h4>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-secondary-500">R$ 80</div>
+                                    <div class="text-sm text-gray-400">/mês</div>
+                                </div>
+                            </div>
+                            <button class="w-full bg-secondary-500 hover:bg-secondary-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
+                                Quero este plano
+                            </button>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl border-2 border-accent-500 relative">
+                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                <span class="bg-accent-500 text-black px-4 py-1 rounded-full text-sm font-bold">Mais Popular</span>
+                            </div>
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-lg font-semibold">Trimestral</h4>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-accent-500">R$ 210</div>
+                                    <div class="text-sm text-gray-400">R$ 70/mês</div>
+                                </div>
+                            </div>
+                            <button class="w-full bg-accent-500 hover:bg-accent-600 text-black px-4 py-2 rounded-lg font-bold transition-colors">
+                                Quero este plano
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Presential Plans -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-primary-500 text-center mb-6">🏋️ Presencial (PB)</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-primary-500 transition-colors">
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-lg font-semibold">3x/semana</h4>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-primary-500">R$ 300</div>
+                                    <div class="text-sm text-gray-400">/mês</div>
+                                </div>
+                            </div>
+                            <button class="w-full bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
+                                Quero este plano
+                            </button>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-primary-500 transition-colors">
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-lg font-semibold">5x/semana</h4>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-primary-500">R$ 500</div>
+                                    <div class="text-sm text-gray-400">/mês</div>
+                                </div>
+                            </div>
+                            <button class="w-full bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
+                                Quero este plano
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultados" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Resultados que Falam por Si</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Veja algumas das transformações incríveis dos nossos alunos
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                        <span class="text-gray-600 font-semibold">Antes/Depois #1</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg mb-2">João - 28 anos</h3>
+                        <p class="text-gray-600">-15kg em 4 meses</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                        <span class="text-gray-600 font-semibold">Antes/Depois #2</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg mb-2">Maria - 32 anos</h3>
+                        <p class="text-gray-600">+8kg massa magra</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                        <span class="text-gray-600 font-semibold">Antes/Depois #3</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg mb-2">Carlos - 25 anos</h3>
+                        <p class="text-gray-600">Definição muscular</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Conheça Michael Martins</h2>
+                    <div class="space-y-4 text-lg text-gray-700">
+                        <p>
+                            Personal Trainer especializado em <strong>Biomecânica</strong> e <strong>Avaliação Postural</strong>, 
+                            com mais de 5 anos transformando vidas através do exercício físico.
+                        </p>
+                        <p>
+                            Minha abordagem combina ciência, experiência prática e acompanhamento personalizado 
+                            para garantir que você alcance seus objetivos de forma segura e eficiente.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 pt-6">
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 bg-primary-500 rounded-full"></div>
+                                <span class="font-semibold">Biomecânica</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 bg-secondary-500 rounded-full"></div>
+                                <span class="font-semibold">Avaliação Postural</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 bg-accent-500 rounded-full"></div>
+                                <span class="font-semibold">Consultoria Online</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-3 h-3 bg-gray-400 rounded-full"></div>
+                                <span class="font-semibold">Acompanhamento 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:text-center">
+                    <div class="w-80 h-80 bg-gradient-to-br from-primary-200 to-secondary-200 rounded-2xl mx-auto flex items-center justify-center">
+                        <span class="text-gray-600 font-semibold text-lg">Foto do Michael</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contato" class="py-20 bg-gradient-to-br from-secondary-500 to-primary-500 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Pronto para sua próxima transformação?
+            </h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Entre em contato agora e comece sua jornada rumo ao corpo dos seus sonhos
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20os%20planos." 
+                   target="_blank" rel="noopener"
+                   class="bg-accent-500 hover:bg-accent-600 text-black px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                    💬 Falar no WhatsApp
+                </a>
+                <a href="tel:+5583981238895" 
+                   class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                    📞 Ligar Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Michael Martins</h3>
+                    <p class="text-gray-400">Personal Trainer especializado em transformações corporais</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📱 (83) 98123-8895</p>
+                        <p>📍 Santa Rita - PB</p>
+                        <p>🌐 Online para todo Brasil</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Horários</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Segunda a Sexta: 6h às 22h</p>
+                        <p>Sábado: 8h às 18h</p>
+                        <p>Domingo: Plantão WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Michael Martins Personal Trainer. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

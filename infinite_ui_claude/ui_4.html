@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Martins - Personal Trainer | Transforme seu Corpo</title>
+    <meta name="description" content="Personal Trainer especializado em transformações corporais. Consultoria online e presencial na Paraíba. Resultados comprovados.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 500: '#DC2626', 600: '#B91C1C', 700: '#991B1B' },
+                        secondary: { 500: '#EA580C', 600: '#C2410C', 700: '#9A3412' },
+                        accent: { 500: '#F59E0B', 600: '#D97706', 700: '#B45309' }
+                    },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fire-gradient {
+            background: linear-gradient(135deg, #DC2626 0%, #EA580C 50%, #F59E0B 100%);
+        }
+        .glow-effect {
+            box-shadow: 0 0 30px rgba(220, 38, 38, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-900 text-white">
+    <!-- WhatsApp Fixed Button -->
+    <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20os%20planos." 
+       target="_blank" rel="noopener"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.696"/>
+        </svg>
+    </a>
+
+    <!-- Intense Navigation -->
+    <nav class="bg-black/90 backdrop-blur-md border-b border-primary-500/30 fixed w-full top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="w-14 h-14 fire-gradient rounded-xl flex items-center justify-center text-white font-bold text-2xl glow-effect">🔥</div>
+                    <div class="ml-4">
+                        <h1 class="text-xl font-bold text-white">Michael Martins</h1>
+                        <p class="text-sm text-orange-300">Personal Trainer FIRE</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-white hover:text-primary-500 font-medium transition-colors">Início</a>
+                    <a href="#planos" class="text-gray-300 hover:text-primary-500 font-medium transition-colors">Planos</a>
+                    <a href="#resultados" class="text-gray-300 hover:text-primary-500 font-medium transition-colors">Resultados</a>
+                    <a href="#sobre" class="text-gray-300 hover:text-primary-500 font-medium transition-colors">Sobre</a>
+                    <a href="https://wa.me/5583981238895" target="_blank" 
+                       class="fire-gradient text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 hover:scale-105 glow-effect">
+                        🔥 QUEIMAR AGORA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fire Hero Section -->
+    <section id="inicio" class="pt-20 min-h-screen fire-gradient flex items-center relative overflow-hidden">
+        <!-- Fire particles effect -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-4 h-4 bg-accent-500 rounded-full animate-ping"></div>
+            <div class="absolute top-3/4 right-1/4 w-3 h-3 bg-primary-500 rounded-full animate-ping delay-1000"></div>
+            <div class="absolute bottom-1/4 left-1/3 w-2 h-2 bg-secondary-500 rounded-full animate-ping delay-500"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 text-center lg:text-left">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center px-6 py-3 bg-black/30 backdrop-blur-md rounded-full text-accent-500 text-sm font-bold border border-accent-500/30">
+                            🔥 QUEIME GORDURA EM 30 DIAS
+                        </div>
+                        <h1 class="text-6xl lg:text-8xl font-extrabold leading-none">
+                            INCENDEIE
+                            <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-accent-500 to-white">SEU CORPO</span>
+                        </h1>
+                        <p class="text-xl text-orange-100 leading-relaxed max-w-lg">
+                            Transformação EXTREMA com metodologia científica. Queime gordura, ganhe músculo, MUDE SUA VIDA!
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Quero%20QUEIMAR%20gordura%20agora!" 
+                           target="_blank" rel="noopener"
+                           class="bg-black text-white px-10 py-5 rounded-2xl text-xl font-bold transition-all duration-300 hover:scale-105 hover:shadow-2xl glow-effect">
+                            🔥 QUEIMAR AGORA
+                        </a>
+                        <a href="#resultados" 
+                           class="border-2 border-white/50 backdrop-blur-md text-white hover:bg-white/20 px-10 py-5 rounded-2xl text-xl font-bold transition-all duration-300">
+                            Ver Transformações
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-8 pt-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-accent-500">500+</div>
+                            <div class="text-sm text-orange-200">Corpos Transformados</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-white">5+</div>
+                            <div class="text-sm text-orange-200">Anos Queimando</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-primary-500">98%</div>
+                            <div class="text-sm text-orange-200">Satisfação TOTAL</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative lg:ml-12">
+                    <div class="relative">
+                        <div class="w-full h-96 lg:h-[500px] bg-gradient-to-br from-black/50 to-gray-800/50 rounded-3xl shadow-2xl flex items-center justify-center backdrop-blur-md border border-white/20">
+                            <span class="text-white font-bold text-2xl">💪 MICHAEL EM AÇÃO</span>
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-accent-500 rounded-3xl shadow-xl flex items-center justify-center glow-effect">
+                            <div class="text-black font-bold text-center">
+                                <div class="text-3xl">🏆</div>
+                                <div class="text-sm">TOP FIRE</div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-6 -right-6 w-24 h-24 bg-primary-500 rounded-3xl shadow-xl flex items-center justify-center glow-effect">
+                            <div class="text-white font-bold text-center">
+                                <div class="text-2xl">🔥</div>
+                                <div class="text-xs">BEAST</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intense Plans Section -->
+    <section id="planos" class="py-32 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl lg:text-6xl font-bold text-white mb-8">
+                    ESCOLHA SUA
+                    <br>
+                    <span class="text-transparent bg-clip-text fire-gradient">INTENSIDADE</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Planos EXTREMOS para resultados EXTREMOS. Transformação garantida ou dinheiro de volta.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Online Fire Plan -->
+                <div class="group">
+                    <div class="bg-gray-900 border-2 border-primary-500/30 rounded-3xl p-8 hover:border-primary-500 transition-all duration-500 hover:shadow-2xl hover:shadow-primary-500/30 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-primary-500/10 rounded-full -translate-y-16 translate-x-16"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-between mb-8">
+                                <div>
+                                    <h3 class="text-3xl font-bold text-white flex items-center gap-3">
+                                        🔥 ONLINE FIRE
+                                    </h3>
+                                    <p class="text-gray-400">Queime de qualquer lugar</p>
+                                </div>
+                                <div class="w-16 h-16 fire-gradient rounded-2xl flex items-center justify-center text-3xl">
+                                    📱
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4 mb-10">
+                                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                                    <span class="font-semibold text-white">Mensal FIRE</span>
+                                    <span class="text-2xl font-bold text-primary-500">R$ 80</span>
+                                </div>
+                                <div class="relative p-4 fire-gradient rounded-xl">
+                                    <div class="absolute -top-2 -right-2 bg-accent-500 text-black px-3 py-1 rounded-full text-xs font-bold">🔥 MAIS INTENSO</div>
+                                    <div class="flex justify-between items-center text-black">
+                                        <div>
+                                            <span class="font-bold">Trimestral BEAST</span>
+                                            <div class="text-sm">Economia explosiva</div>
+                                        </div>
+                                        <span class="text-2xl font-bold">R$ 210</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                                    <span class="font-semibold text-white">Anual EXTREME</span>
+                                    <span class="text-2xl font-bold text-primary-500">R$ 660</span>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Quero%20o%20plano%20ONLINE%20FIRE!" 
+                               target="_blank" rel="noopener"
+                               class="block w-full fire-gradient text-black text-center py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 glow-effect">
+                                🔥 COMEÇAR A QUEIMAR
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Presencial Beast Plan -->
+                <div class="group">
+                    <div class="bg-gray-900 border-2 border-secondary-500/30 rounded-3xl p-8 hover:border-secondary-500 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary-500/30 relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-32 h-32 bg-secondary-500/10 rounded-full -translate-y-16 -translate-x-16"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-between mb-8">
+                                <div>
+                                    <h3 class="text-3xl font-bold text-white flex items-center gap-3">
+                                        💪 PRESENCIAL BEAST
+                                    </h3>
+                                    <p class="text-gray-400">Intensidade máxima - PB</p>
+                                </div>
+                                <div class="w-16 h-16 bg-gradient-to-br from-secondary-500 to-primary-500 rounded-2xl flex items-center justify-center text-3xl">
+                                    🏋️
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4 mb-10">
+                                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                                    <span class="font-semibold text-white">3x WARRIOR</span>
+                                    <span class="text-2xl font-bold text-secondary-500">R$ 300</span>
+                                </div>
+                                <div class="flex justify-between items-center p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors">
+                                    <span class="font-semibold text-white">4x GLADIATOR</span>
+                                    <span class="text-2xl font-bold text-secondary-500">R$ 400</span>
+                                </div>
+                                <div class="relative p-4 bg-gradient-to-r from-secondary-500 to-accent-500 rounded-xl">
+                                    <div class="flex justify-between items-center text-black">
+                                        <div>
+                                            <span class="font-bold">5x BEAST MODE</span>
+                                            <div class="text-sm">Transformação TOTAL</div>
+                                        </div>
+                                        <span class="text-2xl font-bold">R$ 500</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Quero%20o%20plano%20PRESENCIAL%20BEAST!" 
+                               target="_blank" rel="noopener"
+                               class="block w-full bg-gradient-to-r from-secondary-500 to-accent-500 text-black text-center py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 glow-effect">
+                                💪 VIRAR BEAST
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explosive Results -->
+    <section id="resultados" class="py-32 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl lg:text-6xl font-bold text-white mb-8">
+                    TRANSFORMAÇÕES
+                    <br>
+                    <span class="text-transparent bg-clip-text fire-gradient">EXPLOSIVAS</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Resultados que vão te deixar sem fôlego. Veja o que o FOGO faz com seu corpo.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group">
+                    <div class="bg-black border border-primary-500/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-500 hover:border-primary-500">
+                        <div class="h-64 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative">
+                            <span class="text-white font-bold text-lg">🔥 ANTES/DEPOIS</span>
+                            <div class="absolute top-4 right-4 bg-primary-500 text-white p-2 rounded-full text-xs font-bold">FIRE</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-white">João "FIRE" Silva</h3>
+                            <p class="text-gray-400 mb-3">-15kg queimados • 4 meses</p>
+                            <div class="flex text-accent-500 text-lg">🔥🔥🔥🔥🔥</div>
+                            <p class="text-primary-500 text-sm mt-2 font-semibold">"QUEIMEI TUDO!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="bg-black border border-secondary-500/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:shadow-secondary-500/30 transition-all duration-500 hover:border-secondary-500">
+                        <div class="h-64 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative">
+                            <span class="text-white font-bold text-lg">💪 ANTES/DEPOIS</span>
+                            <div class="absolute top-4 right-4 bg-secondary-500 text-white p-2 rounded-full text-xs font-bold">BEAST</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-white">Maria "BEAST" Santos</h3>
+                            <p class="text-gray-400 mb-3">+8kg massa magra</p>
+                            <div class="flex text-accent-500 text-lg">🔥🔥🔥🔥🔥</div>
+                            <p class="text-secondary-500 text-sm mt-2 font-semibold">"VIREI UMA MÁQUINA!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="bg-black border border-accent-500/30 rounded-3xl overflow-hidden hover:shadow-2xl hover:shadow-accent-500/30 transition-all duration-500 hover:border-accent-500">
+                        <div class="h-64 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative">
+                            <span class="text-white font-bold text-lg">⚡ ANTES/DEPOIS</span>
+                            <div class="absolute top-4 right-4 bg-accent-500 text-black p-2 rounded-full text-xs font-bold">EXTREME</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-white">Carlos "THUNDER" Lima</h3>
+                            <p class="text-gray-400 mb-3">Definição TOTAL</p>
+                            <div class="flex text-accent-500 text-lg">🔥🔥🔥🔥🔥</div>
+                            <p class="text-accent-500 text-sm mt-2 font-semibold">"SOU OUTRO CARA!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Quero%20ver%20mais%20transformações%20FIRE!" 
+                   target="_blank" rel="noopener"
+                   class="inline-flex items-center fire-gradient text-black px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-300 hover:scale-105 glow-effect">
+                    🔥 VER MAIS TRANSFORMAÇÕES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Fire Master -->
+    <section id="sobre" class="py-32 bg-black">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <div class="inline-flex items-center px-6 py-3 fire-gradient rounded-full text-black text-sm font-bold mb-6">
+                            🔥 FIRE MASTER CERTIFIED
+                        </div>
+                        <h2 class="text-5xl lg:text-6xl font-bold text-white mb-8">
+                            MICHAEL
+                            <br>
+                            <span class="text-transparent bg-clip-text fire-gradient">FIRE MARTINS</span>
+                        </h2>
+                        <p class="text-xl text-gray-300 leading-relaxed">
+                            O Personal Trainer mais INTENSO da Paraíba. Especialista em queimar gordura e construir músculos com metodologia científica EXTREMA.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-gray-900 p-6 rounded-2xl border border-primary-500/30 hover:border-primary-500 transition-colors">
+                            <div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center text-white font-bold text-2xl mb-4">🧠</div>
+                            <h3 class="font-bold text-lg mb-2 text-white">Biomecânica FIRE</h3>
+                            <p class="text-gray-400">Ciência aplicada na QUEIMA</p>
+                        </div>
+                        <div class="bg-gray-900 p-6 rounded-2xl border border-secondary-500/30 hover:border-secondary-500 transition-colors">
+                            <div class="w-12 h-12 bg-secondary-500 rounded-xl flex items-center justify-center text-white font-bold text-2xl mb-4">📐</div>
+                            <h3 class="font-bold text-lg mb-2 text-white">Avaliação BEAST</h3>
+                            <p class="text-gray-400">Análise corporal EXTREMA</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Quero%20conhecer%20a%20metodologia%20FIRE!" 
+                           target="_blank" rel="noopener"
+                           class="fire-gradient text-black px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 text-center glow-effect">
+                            🔥 CONHECER METODOLOGIA
+                        </a>
+                        <a href="#planos" class="border-2 border-gray-600 hover:border-primary-500 text-white hover:text-primary-500 px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 text-center">
+                            Ver Planos FIRE
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative">
+                        <div class="w-full h-96 bg-gradient-to-br from-gray-800 to-black rounded-3xl shadow-2xl flex items-center justify-center border border-primary-500/30">
+                            <span class="text-white font-bold text-2xl">🔥 MICHAEL FIRE</span>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-accent-500 text-black p-6 rounded-3xl shadow-xl glow-effect">
+                            <div class="font-bold text-center">
+                                <div class="text-3xl">5+</div>
+                                <div class="text-sm">Anos FIRE</div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -left-4 bg-primary-500 text-white p-6 rounded-3xl shadow-xl glow-effect">
+                            <div class="font-bold text-center">
+                                <div class="text-3xl">🏆</div>
+                                <div class="text-sm">MASTER</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Fire CTA -->
+    <section class="py-32 fire-gradient text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-6xl lg:text-7xl font-bold mb-8">
+                PRONTO PARA
+                <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-black">PEGAR FOGO?</span>
+            </h2>
+            <p class="text-2xl mb-16 max-w-2xl mx-auto font-light">
+                Não espere mais. Sua transformação EXPLOSIVA começa AGORA!
+            </p>
+            
+            <a href="https://wa.me/5583981238895?text=Ol%C3%A1%20Michael!%20Vim%20pelo%20site%20e%20quero%20PEGAR%20FOGO!" 
+               target="_blank" rel="noopener"
+               class="inline-block bg-black text-white px-16 py-6 rounded-3xl font-bold text-2xl transition-all duration-300 hover:scale-110 hover:shadow-2xl glow-effect">
+                🔥 PEGAR FOGO AGORA!
+            </a>
+
+            <div class="mt-20 grid grid-cols-3 gap-8 max-w-lg mx-auto text-lg">
+                <div>
+                    <div class="text-4xl mb-4">📱</div>
+                    <p class="font-bold">Contato FIRE</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">🔥</div>
+                    <p class="font-bold">Queima Imediata</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">💪</div>
+                    <p class="font-bold">Resultado BEAST</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fire Footer -->
+    <footer class="bg-black text-white py-16 border-t border-primary-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 fire-gradient rounded-xl flex items-center justify-center text-2xl">🔥</div>
+                        <div class="ml-3">
+                            <h3 class="font-bold text-lg">Michael Fire Martins</h3>
+                            <p class="text-gray-400 text-sm">Personal Trainer BEAST</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Queimando gordura e construindo músculos com INTENSIDADE máxima.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-primary-500">Serviços FIRE</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>🔥 Consultoria Online</p>
+                        <p>💪 Personal BEAST</p>
+                        <p>📐 Avaliação Postural</p>
+                        <p>🧠 Biomecânica EXTREMA</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-secondary-500">Contato BEAST</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📱 (83) 98123-8895</p>
+                        <p>📍 Santa Rita - PB</p>
+                        <p>🌐 Online para todo Brasil</p>
+                        <p>🔥 WhatsApp 24/7</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-accent-500">Horário FIRE</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Segunda a Sexta: 6h às 22h</p>
+                        <p>Sábado: 8h às 18h</p>
+                        <p>Domingo: Plantão FIRE</p>
+                        <p>🔥 Sempre ON!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Michael Fire Martins Personal Trainer. Todos os direitos reservados. 🔥</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
